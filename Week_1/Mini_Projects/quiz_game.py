@@ -33,7 +33,7 @@ for question in questions:
     print(question['question'])
     for option in question['options']:
         print(option)
-    answer = input("Enter your choice: ")
+    answer = input("Enter your choice: ").lower()
     while answer not in "abcd":
         print("Invalid choice. Try again")
         answer = input("Enter your choice: ")
