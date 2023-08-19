@@ -1,19 +1,18 @@
-class MyStack:
-
+class Stack:
     def __init__(self):
         self.stack = []
         self.size = 0
 
-    def push(self, x: int) -> None:
+    def push(self, x):
         self.stack.append(x)
         self.size += 1
 
-    def pop(self) -> int:
+    def pop(self):
         self.size -= 1
         return self.stack.pop()
 
-    def top(self) -> int:
+    def top(self):
         return self.stack[-1]
 
-    def empty(self) -> bool:
+    def empty(self):
         return self.size == 0
